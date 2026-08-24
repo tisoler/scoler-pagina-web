@@ -5,6 +5,7 @@ import PlatformPreview from '../../components/PlatformPreview';
 import Calculator from '../../components/Calculator';
 import HowItWorks from '../../components/HowItWorks';
 import ContactForm from '../../components/ContactForm';
+import Team from '../../components/Team';
 import Footer from '../../components/Footer';
 
 export default function Page() {
@@ -18,6 +19,7 @@ export default function Page() {
         <Calculator />
         <HowItWorks />
         <ContactForm />
+        <Team />
       </main>
       <Footer />
     </div>
