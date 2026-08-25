@@ -1,4 +1,5 @@
 import LogoMark from './LogoMark';
+import LinkedInIcon from './LinkedInIcon';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,6 +21,16 @@ export default function Footer() {
             <p className="text-xs text-muted-foreground leading-relaxed max-w-sm">
               Servicio líder en recuperación de activos y carteras de mora. Impulsado por tecnología inteligente y gestionado por profesionales con experiencia comprobada.
             </p>
+            <a
+              href="https://www.linkedin.com/company/135186112"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de Scoler Servicios"
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <LinkedInIcon className="size-5" />
+              <span className="text-xs font-bold">LinkedIn</span>
+            </a>
           </div>
 
           {/* Nav col */}

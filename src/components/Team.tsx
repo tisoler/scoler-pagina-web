@@ -1,4 +1,5 @@
 import { BadgeCheck } from 'lucide-react';
+import LinkedInIcon from './LinkedInIcon';
 
 export default function Team() {
   const members = [
@@ -8,6 +9,7 @@ export default function Team() {
       roleLabel: 'Credit & Collection Manager',
       photo: '/perfil-Juan.png',
       alt: 'Foto de Juan Manuel Lértora',
+      linkedin: 'https://www.linkedin.com/in/juanl%C3%A9rtora/',
       description: 'Lidera las estrategias de cobranza y negociación, cuidando la relación con los deudores y maximizando las tasas de recupero.',
     },
     {
@@ -16,6 +18,7 @@ export default function Team() {
       roleLabel: 'Director de Tecnología',
       photo: '/perfil_Diego.png',
       alt: 'Foto de Diego Díaz Barroso',
+      linkedin: 'https://www.linkedin.com/in/diego-d%C3%ADaz-barroso-b76163103/',
       description: 'Impulsa la plataforma Astre y la tecnología que hace posible una cobranza inteligente, transparente y a escala.',
     },
   ];
@@ -71,6 +74,17 @@ export default function Team() {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {member.description}
               </p>
+
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`LinkedIn de ${member.name}`}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 hover:bg-primary/5 transition-colors text-xs font-bold"
+              >
+                <LinkedInIcon className="size-4" />
+                LinkedIn
+              </a>
             </div>
           ))}
         </div>
