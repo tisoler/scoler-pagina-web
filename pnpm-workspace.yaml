@@ -1,2 +1,8 @@
 onlyBuiltDependencies:
   - esbuild
+
+overrides:
+  node-releases: "2.0.53"
+  update-browserslist-db: "1.3.1"
+  baseline-browser-mapping: "2.11.19"
+  "@jridgewell/sourcemap-codec": "1.5.5"
