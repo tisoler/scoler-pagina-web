@@ -31,5 +31,6 @@
     "vike": "^0.4.214",
     "vike-react": "^0.6.6",
     "vite": "^8.0.12"
-  }
+  },
+  "packageManager": "pnpm@10.28.2"
 }
