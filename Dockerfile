@@ -7,8 +7,8 @@ WORKDIR /app
 # Copiar archivos de dependencias
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
-# Habilitar Corepack (viene con Node) y usar la versión fijada en package.json
-RUN corepack enable && corepack prepare pnpm@10.28.2 --activate
+# Instalar pnpm
+RUN npm install -g pnpm
 
 # Instalar dependencias
 RUN pnpm install --frozen-lockfile
